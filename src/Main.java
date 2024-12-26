@@ -53,42 +53,31 @@ public class Main {
 
         System.out.println("Task 3");
 
-        for (int index = 2; index < 3; index = index - 1) {
-            {
-                if (index == numbers.length - 3) {
-                    System.out.println(numbers[index]);
-                    break;
-                }
-
-                System.out.print(numbers[index] + ", ");
-
-
+        for (int i = numbers.length - 1; i >= 0; i--) {
+            if (i < numbers.length - 1) {
+                System.out.print(", ");
             }
+            System.out.print(numbers[i]);
         }
-        for (int index = 2; index < 3; index = index - 1) {
-            {
-                if (index == fractionalNumbers.length - 3) {
-                    System.out.println(fractionalNumbers[index]);
-                    break;
-                }
 
-                System.out.print(fractionalNumbers[index] + ", ");
+        System.out.println();
 
-
+        for (int i = fractionalNumbers.length - 1; i >= 0; i--) {
+            if (i < fractionalNumbers.length - 1) {
+                System.out.print(", ");
             }
+            System.out.print(fractionalNumbers[i]);
         }
-        for (int index = 7; index < 8; index = index - 1) {
-            {
-                if (index == lamb.length - 8) {
-                    System.out.println(lamb[index]);
-                    break;
-                }
+        System.out.println();
 
-                System.out.print(lamb[index] + ", ");
-
-
+        for (int i = lamb.length - 1; i >= 0; i--) {
+            if (i < lamb.length - 1) {
+                System.out.print(", ");
             }
+            System.out.print(lamb[i]);
         }
+        System.out.println();
+
 
         System.out.println("Task 4");
         for (int i = 0; i < numbers.length; i++) {
